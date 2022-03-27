@@ -1,0 +1,95 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.trivotan.motivational_quote_app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/trivo/Documents/GitHub/motivational_quote_app/android/app/src/debug/AndroidManifest.xml:6:5-66
+14-->/Users/trivo/Documents/GitHub/motivational_quote_app/android/app/src/debug/AndroidManifest.xml:6:22-64
+15
+16    <application
+17        android:name="android.app.Application"
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.6.0] /Users/trivo/.gradle/caches/transforms-2/files-2.1/8ec5a4192b12a309556d408337153575/core-1.6.0/AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:icon="@mipmap/ic_launcher"
+21        android:label="motivational_quote_app" >
+22        <activity
+23            android:name="com.example.motivational_quote_app.MainActivity"
+24            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+25            android:exported="true"
+26            android:hardwareAccelerated="true"
+27            android:launchMode="singleTop"
+28            android:theme="@style/LaunchTheme"
+29            android:windowSoftInputMode="adjustResize" >
+30
+31            <!--
+32                 Specifies an Android theme to apply to this Activity as soon as
+33                 the Android process has started. This theme is visible to the user
+34                 while the Flutter UI initializes. After that, this theme continues
+35                 to determine the Window background behind the Flutter UI.
+36            -->
+37            <meta-data
+38                android:name="io.flutter.embedding.android.NormalTheme"
+39                android:resource="@style/NormalTheme" />
+40
+41            <intent-filter>
+42                <action android:name="android.intent.action.MAIN" />
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+45            </intent-filter>
+46        </activity>
+47        <!--
+48             Don't delete the meta-data below.
+49             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+50        -->
+51        <meta-data
+52            android:name="flutterEmbedding"
+53            android:value="2" />
+54
+55        <service
+55-->[:firebase_core] /Users/trivo/Documents/GitHub/motivational_quote_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+56            android:name="com.google.firebase.components.ComponentDiscoveryService"
+56-->[:firebase_core] /Users/trivo/Documents/GitHub/motivational_quote_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+57            android:directBootAware="true"
+57-->[com.google.firebase:firebase-common:20.1.0] /Users/trivo/.gradle/caches/transforms-2/files-2.1/b60f541a3dfe6e5f8741b6903b0805eb/jetified-firebase-common-20.1.0/AndroidManifest.xml:35:13-43
+58            android:exported="false" >
+58-->[com.google.firebase:firebase-common:20.1.0] /Users/trivo/.gradle/caches/transforms-2/files-2.1/b60f541a3dfe6e5f8741b6903b0805eb/jetified-firebase-common-20.1.0/AndroidManifest.xml:36:13-37
+59            <meta-data
+59-->[:firebase_core] /Users/trivo/Documents/GitHub/motivational_quote_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+60                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+60-->[:firebase_core] /Users/trivo/Documents/GitHub/motivational_quote_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-124
+61                android:value="com.google.firebase.components.ComponentRegistrar" />
+61-->[:firebase_core] /Users/trivo/Documents/GitHub/motivational_quote_app/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+62        </service>
+63
+64        <provider
+64-->[com.google.firebase:firebase-common:20.1.0] /Users/trivo/.gradle/caches/transforms-2/files-2.1/b60f541a3dfe6e5f8741b6903b0805eb/jetified-firebase-common-20.1.0/AndroidManifest.xml:26:9-31:39
+65            android:name="com.google.firebase.provider.FirebaseInitProvider"
+65-->[com.google.firebase:firebase-common:20.1.0] /Users/trivo/.gradle/caches/transforms-2/files-2.1/b60f541a3dfe6e5f8741b6903b0805eb/jetified-firebase-common-20.1.0/AndroidManifest.xml:27:13-77
+66            android:authorities="com.trivotan.motivational_quote_app.firebaseinitprovider"
+66-->[com.google.firebase:firebase-common:20.1.0] /Users/trivo/.gradle/caches/transforms-2/files-2.1/b60f541a3dfe6e5f8741b6903b0805eb/jetified-firebase-common-20.1.0/AndroidManifest.xml:28:13-72
+67            android:directBootAware="true"
+67-->[com.google.firebase:firebase-common:20.1.0] /Users/trivo/.gradle/caches/transforms-2/files-2.1/b60f541a3dfe6e5f8741b6903b0805eb/jetified-firebase-common-20.1.0/AndroidManifest.xml:29:13-43
+68            android:exported="false"
+68-->[com.google.firebase:firebase-common:20.1.0] /Users/trivo/.gradle/caches/transforms-2/files-2.1/b60f541a3dfe6e5f8741b6903b0805eb/jetified-firebase-common-20.1.0/AndroidManifest.xml:30:13-37
+69            android:initOrder="100" />
+69-->[com.google.firebase:firebase-common:20.1.0] /Users/trivo/.gradle/caches/transforms-2/files-2.1/b60f541a3dfe6e5f8741b6903b0805eb/jetified-firebase-common-20.1.0/AndroidManifest.xml:31:13-36
+70
+71        <meta-data
+71-->[com.google.android.gms:play-services-basement:18.0.0] /Users/trivo/.gradle/caches/transforms-2/files-2.1/6f55727569cdc4f2e92c738b6d0b61e3/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+72            android:name="com.google.android.gms.version"
+72-->[com.google.android.gms:play-services-basement:18.0.0] /Users/trivo/.gradle/caches/transforms-2/files-2.1/6f55727569cdc4f2e92c738b6d0b61e3/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+73            android:value="@integer/google_play_services_version" />
+73-->[com.google.android.gms:play-services-basement:18.0.0] /Users/trivo/.gradle/caches/transforms-2/files-2.1/6f55727569cdc4f2e92c738b6d0b61e3/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+74    </application>
+75
+76</manifest>

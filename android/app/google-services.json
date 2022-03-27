@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "377603465409",
+    "project_id": "motivational-quote-app",
+    "storage_bucket": "motivational-quote-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377603465409:android:1800504cc8c11e23373440",
+        "android_client_info": {
+          "package_name": "com.trivotan.motivational_quote_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "377603465409-top0ovm22e23ljn6r4hhv5po34a17fja.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzb7PDPmw54KdsYhT15sVHiBqGVoNBjE0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "377603465409-top0ovm22e23ljn6r4hhv5po34a17fja.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
