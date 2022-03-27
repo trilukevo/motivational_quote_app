@@ -14,7 +14,7 @@ class GetData extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     CollectionReference images =
-        FirebaseFirestore.instance.collection('images');
+        FirebaseFirestore.instance.collection('maindata');
 
     return FutureBuilder<DocumentSnapshot>(
       future: images.doc(documentId).get(),
