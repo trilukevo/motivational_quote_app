@@ -1,9 +1,12 @@
-
 import 'package:flutter/material.dart';
 import 'package:card_swiper/card_swiper.dart';
 import 'package:motivational_quote_app/constants.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:motivational_quote_app/get_data.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -90,10 +93,10 @@ class _HomePageState extends State<HomePage> {
                     'Quote of the Day',
                     style: kTitleTextStyle,
                   ),
-                  Text(
-                    quotes[currentIndexNumber],
+                  GetData(
                     textAlign: TextAlign.center,
                     style: kSubTitleTextStyle,
+                    documentId: "jPbFMLxf0o64UC0qxjsj",
                   ),
                   SizedBox(
                     height: 55,
@@ -101,7 +104,10 @@ class _HomePageState extends State<HomePage> {
                     child: TextButton(
                       style: kButtonStyle,
                       onPressed: () {},
-                      child: const Text('Like 👍',style: TextStyle(fontWeight: FontWeight.bold),),
+                      child: const Text(
+                        'Like 👍',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
                     ),
                   ),
                 ],
