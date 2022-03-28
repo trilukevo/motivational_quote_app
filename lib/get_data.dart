@@ -7,6 +7,9 @@ class GetData extends StatelessWidget {
   final String? documentId;
   final TextStyle? style;
   final TextAlign? textAlign;
+  // Create a list
+  List<String> maindata = [];
+
   FirebaseFirestore firestore = FirebaseFirestore.instance;
 
   GetData({this.imageUrl, this.quotes, this.documentId, this.style, this.textAlign});
