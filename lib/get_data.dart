@@ -23,7 +23,7 @@ class GetData extends StatelessWidget {
       future: images.doc(documentId).get(),
       builder: (context, snapshot) {
         if (snapshot.hasError) {
-          return Text("Something went wrong");
+          return Text("Something went wrong ");
         }
 
         if (snapshot.hasData && !snapshot.data!.exists) {
