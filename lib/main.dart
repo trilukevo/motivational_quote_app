@@ -45,19 +45,19 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   late int currentIndexNumber = 0;
   FirebaseFirestore firestore = FirebaseFirestore.instance;
-
-  List<String> images = [
-    "https://scontent.fsgn5-8.fna.fbcdn.net/v/t1.6435-9/191712776_1132407380588345_3179710775824733340_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=825194&_nc_ohc=nvpnIFHTlI4AX-eSd0Y&_nc_ht=scontent.fsgn5-8.fna&oh=00_AT9pO022M9bhBBEebmkpk_4QF4H0sWoLCSUWNwr3FExEaA&oe=62643DD9",
-    "https://images.unsplash.com/photo-1528716321680-815a8cdb8cbe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80",
-    "https://images.unsplash.com/photo-1537444399873-da0fea0cf4b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
-  ];
-
-  List<String> quotes = [
-    "Do it for the people who want to see you fail.",
-    "The way to get started is to quit talking and begin doing.",
-    "The purpose of our lives is to be happy.",
-    "You only live once, but if you do it right, once is enough."
-  ];
+  //
+  // List<String> images = [
+  //   "https://scontent.fsgn5-8.fna.fbcdn.net/v/t1.6435-9/191712776_1132407380588345_3179710775824733340_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=825194&_nc_ohc=nvpnIFHTlI4AX-eSd0Y&_nc_ht=scontent.fsgn5-8.fna&oh=00_AT9pO022M9bhBBEebmkpk_4QF4H0sWoLCSUWNwr3FExEaA&oe=62643DD9",
+  //   "https://images.unsplash.com/photo-1528716321680-815a8cdb8cbe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80",
+  //   "https://images.unsplash.com/photo-1537444399873-da0fea0cf4b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
+  // ];
+  //
+  // List<String> quotes = [
+  //   "Do it for the people who want to see you fail.",
+  //   "The way to get started is to quit talking and begin doing.",
+  //   "The purpose of our lives is to be happy.",
+  //   "You only live once, but if you do it right, once is enough."
+  // ];
 
   @override
   Widget build(BuildContext context) {
