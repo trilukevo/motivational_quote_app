@@ -85,7 +85,8 @@ class _HomePageState extends State<HomePage> {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(kImageBorder),
                         image: DecorationImage(
-                          image: NetworkImage(snapshot.data!.docs[index]["imageUrl"]),
+                          image: NetworkImage(
+                              snapshot.data!.docs[index]["imageUrl"]),
                           fit: BoxFit.fitHeight,
                         ),
                       ),
@@ -107,7 +108,7 @@ class _HomePageState extends State<HomePage> {
                         style: kTitleTextStyle,
                       ),
                       Text(
-                        'Do it now! Now or Never!!!',
+                        snapshot.data!.docs[currentIndexNumber]["quote"],
                         style: kSubTitleTextStyle,
                       ),
                       SizedBox(
