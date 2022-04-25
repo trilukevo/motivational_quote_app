@@ -104,6 +104,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                       Text(
                         snapshot.data!.docs[currentIndexNumber]["quote"],
+                        textAlign: TextAlign.center,
                         style: kSubTitleTextStyle,
                       ),
                       SizedBox(
