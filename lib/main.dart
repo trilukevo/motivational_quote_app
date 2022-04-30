@@ -47,8 +47,6 @@ class _HomePageState extends State<HomePage> {
   late int currentIndexNumber = 0;
   FirebaseFirestore firestore = FirebaseFirestore.instance;
   final size = 30.0;
-  bool isLiked = false;
-
 
   @override
   Widget build(BuildContext context) {
@@ -58,8 +56,8 @@ class _HomePageState extends State<HomePage> {
         child: StreamBuilder(
           stream: firestore.collection('maindata').snapshots(),
           builder: (context, AsyncSnapshot<QuerySnapshot> snapshot) {
-            int likeCount = snapshot.data!.docs[currentIndexNumber]
-            ["like"];
+            int likeCount = snapshot.data!.docs[currentIndexNumber]["like"];
+            bool isLoved = snapshot.data!.docs[currentIndexNumber]["isLiked"];
             if (!snapshot.hasData) return const Text('Loading...');
 
             return Container(
@@ -74,8 +72,8 @@ class _HomePageState extends State<HomePage> {
                   },
                   curve: Curves.linear,
                   itemBuilder: (context, index) {
-                    var likeCount = snapshot.data!.docs[currentIndexNumber]
-                    ["like"];
+                    var likeCount =
+                        snapshot.data!.docs[currentIndexNumber]["like"];
                     return Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(kImageBorder),
@@ -115,9 +113,14 @@ class _HomePageState extends State<HomePage> {
                           //TODO: Add Like button logic
                           onPressed: () {},
                           child: LikeButton(
-                            isLiked: isLiked,
+                            isLiked: isLoved,
                             likeBuilder: (isLiked) {
-                              return Icon(isLiked? Icons.favorite: Icons.favorite_border_outlined, color: isLiked? Colors.red:Colors.grey,);
+                              return Icon(
+                                isLiked
+                                    ? Icons.favorite
+                                    : Icons.favorite_border_outlined,
+                                color: isLiked ? Colors.red : Colors.grey,
+                              );
                             },
                             likeCountPadding: EdgeInsets.only(left: 5.0),
                             size: 30,
@@ -128,24 +131,29 @@ class _HomePageState extends State<HomePage> {
                                 firestore
                                     .collection("maindata")
                                     .doc(snapshot
-                                    .data!.docs[currentIndexNumber].id)
-                                    .update({'like': FieldValue.increment(-1)});
+                                        .data!.docs[currentIndexNumber].id)
+                                    .update({
+                                  'like': FieldValue.increment(-1),
+                                  'isLiked': false
+                                });
                                 setState(() {
-                                  likeCount -=1;
-                                  this.isLiked = false;
+                                  likeCount -= 1;
+                                  isLoved = false;
                                 });
                               } else if (!isLiked) {
                                 firestore
                                     .collection("maindata")
                                     .doc(snapshot
-                                    .data!.docs[currentIndexNumber].id)
-                                    .update({'like': FieldValue.increment(1)});
+                                        .data!.docs[currentIndexNumber].id)
+                                    .update({
+                                  'like': FieldValue.increment(1),
+                                  'isLiked': true
+                                });
                                 setState(() {
-                                  likeCount +=1;
-                                  this.isLiked = true;
+                                  likeCount += 1;
+                                  isLoved = true;
                                 });
                               }
-
                             },
                           ),
                         ),
