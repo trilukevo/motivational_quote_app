@@ -1,6 +1,6 @@
-# motivational_quote_app
+# Motivational Quotes Appp
 
-A new Flutter project.
+A product from trivotan.
 
 ## Getting Started
 
