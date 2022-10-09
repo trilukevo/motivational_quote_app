@@ -4,7 +4,6 @@ import 'package:card_swiper/card_swiper.dart';
 import 'package:motivational_quote_app/constants.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:like_button/like_button.dart';
-import 'package:motivational_quote_app/get_data.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -72,8 +71,8 @@ class _HomePageState extends State<HomePage> {
                   },
                   curve: Curves.linear,
                   itemBuilder: (context, index) {
-                    var likeCount =
-                        snapshot.data!.docs[currentIndexNumber]["like"];
+                    // var likeCount =
+                    //     snapshot.data!.docs[currentIndexNumber]["like"];
                     return Container(
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(kImageBorder),
@@ -154,6 +153,7 @@ class _HomePageState extends State<HomePage> {
                                   isLoved = true;
                                 });
                               }
+                              return null;
                             },
                           ),
                         ),
