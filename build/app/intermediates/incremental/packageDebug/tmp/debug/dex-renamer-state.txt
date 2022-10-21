@@ -1,8 +1,10 @@
-#Fri Oct 21 17:00:43 ICT 2022
+#Fri Oct 21 17:35:25 ICT 2022
 path.4=classes_1.dex
 path.3=classes_0.dex
 path.2=classes2.dex
 path.1=classes.dex
+path.6=classes_3.dex
+path.5=classes_2.dex
 path.0=classes.dex
 base.4=C\:\\Users\\PC\\Desktop\\flutter\\motivational_quote_app\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\classes_1.dex
 base.3=C\:\\Users\\PC\\Desktop\\flutter\\motivational_quote_app\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\classes_0.dex
@@ -13,4 +15,8 @@ renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
+renamed.6=classes7.dex
+renamed.5=classes6.dex
+base.6=C\:\\Users\\PC\\Desktop\\flutter\\motivational_quote_app\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\classes_3.dex
 renamed.4=classes5.dex
+base.5=C\:\\Users\\PC\\Desktop\\flutter\\motivational_quote_app\\build\\app\\intermediates\\dex\\debug\\mergeLibDexDebug\\classes_2.dex
