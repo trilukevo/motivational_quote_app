@@ -4,6 +4,7 @@ import 'package:card_swiper/card_swiper.dart';
 import 'package:motivational_quote_app/constants.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:like_button/like_button.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -43,7 +44,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  late int currentIndexNumber = 0;
+   int currentIndexNumber = 0;
   FirebaseFirestore firestore = FirebaseFirestore.instance;
   final size = 30.0;
 
@@ -77,7 +78,7 @@ class _HomePageState extends State<HomePage> {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(kImageBorder),
                         image: DecorationImage(
-                          image: NetworkImage(
+                          image: CachedNetworkImageProvider(
                               snapshot.data!.docs[index]["imageUrl"]),
                           fit: BoxFit.fitHeight,
                         ),
