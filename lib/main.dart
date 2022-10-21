@@ -56,7 +56,7 @@ class _HomePageState extends State<HomePage> {
           stream: firestore.collection('maindata').snapshots(),
           builder: (context, AsyncSnapshot<QuerySnapshot> snapshot) {
             int likeCount = snapshot.data!.docs[currentIndexNumber]["like"];
-            bool isLoved = snapshot.data!.docs[currentIndexNumber]["isLiked"];
+            bool isLoved = snapshot.data!.docs[currentIndexNumber]["isLiked"] ?? true;
             if (!snapshot.hasData) return const Text('Loading...');
 
             return Container(

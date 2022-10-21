@@ -12,18 +12,18 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->C:\Users\Tri Vo\Documents\GitHub\motivational_app\android\app\src\debug\AndroidManifest.xml:6:5-66
-14-->C:\Users\Tri Vo\Documents\GitHub\motivational_app\android\app\src\debug\AndroidManifest.xml:6:22-64
+14-->C:\Users\PC\Desktop\flutter\motivational_quote_app\android\app\src\debug\AndroidManifest.xml:6:5-66
+14-->C:\Users\PC\Desktop\flutter\motivational_quote_app\android\app\src\debug\AndroidManifest.xml:6:22-64
 15    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
 16    <!-- <uses-sdk android:minSdkVersion="14" /> -->
 17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-17-->[com.google.firebase:firebase-firestore:24.0.2] C:\Users\Tri Vo\.gradle\caches\transforms-2\files-2.1\8123d9b95e838ead3ef24f5d7df1b3ec\jetified-firebase-firestore-24.0.2\AndroidManifest.xml:13:5-79
-17-->[com.google.firebase:firebase-firestore:24.0.2] C:\Users\Tri Vo\.gradle\caches\transforms-2\files-2.1\8123d9b95e838ead3ef24f5d7df1b3ec\jetified-firebase-firestore-24.0.2\AndroidManifest.xml:13:22-76
+17-->[com.google.firebase:firebase-firestore:24.0.2] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\8123d9b95e838ead3ef24f5d7df1b3ec\jetified-firebase-firestore-24.0.2\AndroidManifest.xml:13:5-79
+17-->[com.google.firebase:firebase-firestore:24.0.2] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\8123d9b95e838ead3ef24f5d7df1b3ec\jetified-firebase-firestore-24.0.2\AndroidManifest.xml:13:22-76
 18
 19    <application
 20        android:name="android.app.Application"
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-21-->[androidx.core:core:1.6.0] C:\Users\Tri Vo\.gradle\caches\transforms-2\files-2.1\14b93615368c2249f1830e26ca064ab5\core-1.6.0\AndroidManifest.xml:24:18-86
+21-->[androidx.core:core:1.6.0] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\14b93615368c2249f1830e26ca064ab5\core-1.6.0\AndroidManifest.xml:24:18-86
 22        android:debuggable="true"
 23        android:icon="@mipmap/launcher_icon"
 24        android:label="motivational_quote_app" >
@@ -61,74 +61,74 @@
 56            android:value="2" />
 57
 58        <service
-58-->[:cloud_firestore] C:\Users\Tri Vo\Documents\GitHub\motivational_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+58-->[:cloud_firestore] C:\Users\PC\Desktop\flutter\motivational_quote_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
 59            android:name="com.google.firebase.components.ComponentDiscoveryService"
-59-->[:cloud_firestore] C:\Users\Tri Vo\Documents\GitHub\motivational_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+59-->[:cloud_firestore] C:\Users\PC\Desktop\flutter\motivational_quote_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
 60            android:directBootAware="true"
-60-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Tri Vo\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:35:13-43
+60-->[com.google.firebase:firebase-common:20.1.0] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:35:13-43
 61            android:exported="false" >
-61-->[com.google.firebase:firebase-firestore:24.0.2] C:\Users\Tri Vo\.gradle\caches\transforms-2\files-2.1\8123d9b95e838ead3ef24f5d7df1b3ec\jetified-firebase-firestore-24.0.2\AndroidManifest.xml:19:13-37
+61-->[com.google.firebase:firebase-firestore:24.0.2] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\8123d9b95e838ead3ef24f5d7df1b3ec\jetified-firebase-firestore-24.0.2\AndroidManifest.xml:19:13-37
 62            <meta-data
-62-->[:cloud_firestore] C:\Users\Tri Vo\Documents\GitHub\motivational_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+62-->[:cloud_firestore] C:\Users\PC\Desktop\flutter\motivational_quote_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 63                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
-63-->[:cloud_firestore] C:\Users\Tri Vo\Documents\GitHub\motivational_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-134
+63-->[:cloud_firestore] C:\Users\PC\Desktop\flutter\motivational_quote_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-134
 64                android:value="com.google.firebase.components.ComponentRegistrar" />
-64-->[:cloud_firestore] C:\Users\Tri Vo\Documents\GitHub\motivational_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+64-->[:cloud_firestore] C:\Users\PC\Desktop\flutter\motivational_quote_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 65            <meta-data
-65-->[:firebase_core] C:\Users\Tri Vo\Documents\GitHub\motivational_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+65-->[:firebase_core] C:\Users\PC\Desktop\flutter\motivational_quote_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
 66                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-66-->[:firebase_core] C:\Users\Tri Vo\Documents\GitHub\motivational_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
+66-->[:firebase_core] C:\Users\PC\Desktop\flutter\motivational_quote_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-124
 67                android:value="com.google.firebase.components.ComponentRegistrar" />
-67-->[:firebase_core] C:\Users\Tri Vo\Documents\GitHub\motivational_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+67-->[:firebase_core] C:\Users\PC\Desktop\flutter\motivational_quote_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 68            <meta-data
-68-->[com.google.firebase:firebase-firestore:24.0.2] C:\Users\Tri Vo\.gradle\caches\transforms-2\files-2.1\8123d9b95e838ead3ef24f5d7df1b3ec\jetified-firebase-firestore-24.0.2\AndroidManifest.xml:20:13-22:85
+68-->[com.google.firebase:firebase-firestore:24.0.2] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\8123d9b95e838ead3ef24f5d7df1b3ec\jetified-firebase-firestore-24.0.2\AndroidManifest.xml:20:13-22:85
 69                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-69-->[com.google.firebase:firebase-firestore:24.0.2] C:\Users\Tri Vo\.gradle\caches\transforms-2\files-2.1\8123d9b95e838ead3ef24f5d7df1b3ec\jetified-firebase-firestore-24.0.2\AndroidManifest.xml:21:17-111
+69-->[com.google.firebase:firebase-firestore:24.0.2] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\8123d9b95e838ead3ef24f5d7df1b3ec\jetified-firebase-firestore-24.0.2\AndroidManifest.xml:21:17-111
 70                android:value="com.google.firebase.components.ComponentRegistrar" />
-70-->[com.google.firebase:firebase-firestore:24.0.2] C:\Users\Tri Vo\.gradle\caches\transforms-2\files-2.1\8123d9b95e838ead3ef24f5d7df1b3ec\jetified-firebase-firestore-24.0.2\AndroidManifest.xml:22:17-82
+70-->[com.google.firebase:firebase-firestore:24.0.2] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\8123d9b95e838ead3ef24f5d7df1b3ec\jetified-firebase-firestore-24.0.2\AndroidManifest.xml:22:17-82
 71        </service>
 72
 73        <uses-library
-73-->[androidx.window:window:1.0.0-beta04] C:\Users\Tri Vo\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+73-->[androidx.window:window:1.0.0-beta04] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
 74            android:name="androidx.window.extensions"
-74-->[androidx.window:window:1.0.0-beta04] C:\Users\Tri Vo\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+74-->[androidx.window:window:1.0.0-beta04] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
 75            android:required="false" />
-75-->[androidx.window:window:1.0.0-beta04] C:\Users\Tri Vo\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+75-->[androidx.window:window:1.0.0-beta04] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
 76        <uses-library
-76-->[androidx.window:window:1.0.0-beta04] C:\Users\Tri Vo\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+76-->[androidx.window:window:1.0.0-beta04] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
 77            android:name="androidx.window.sidecar"
-77-->[androidx.window:window:1.0.0-beta04] C:\Users\Tri Vo\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+77-->[androidx.window:window:1.0.0-beta04] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
 78            android:required="false" />
-78-->[androidx.window:window:1.0.0-beta04] C:\Users\Tri Vo\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+78-->[androidx.window:window:1.0.0-beta04] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\cea45e25bbe77c9713c39e234ccfd7bd\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
 79
 80        <provider
-80-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Tri Vo\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:26:9-31:39
+80-->[com.google.firebase:firebase-common:20.1.0] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:26:9-31:39
 81            android:name="com.google.firebase.provider.FirebaseInitProvider"
-81-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Tri Vo\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:27:13-77
+81-->[com.google.firebase:firebase-common:20.1.0] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:27:13-77
 82            android:authorities="com.trivotan.motivational_quote_app.firebaseinitprovider"
-82-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Tri Vo\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:28:13-72
+82-->[com.google.firebase:firebase-common:20.1.0] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:28:13-72
 83            android:directBootAware="true"
-83-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Tri Vo\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:29:13-43
+83-->[com.google.firebase:firebase-common:20.1.0] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:29:13-43
 84            android:exported="false"
-84-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Tri Vo\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:30:13-37
+84-->[com.google.firebase:firebase-common:20.1.0] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:30:13-37
 85            android:initOrder="100" />
-85-->[com.google.firebase:firebase-common:20.1.0] C:\Users\Tri Vo\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:31:13-36
+85-->[com.google.firebase:firebase-common:20.1.0] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\b25e52f5739b5665d39d607baa2467f6\jetified-firebase-common-20.1.0\AndroidManifest.xml:31:13-36
 86
 87        <activity
-87-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Tri Vo\.gradle\caches\transforms-2\files-2.1\1c0769389455a4c14b7a50bc2530cb4a\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+87-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\1c0769389455a4c14b7a50bc2530cb4a\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
 88            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-88-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Tri Vo\.gradle\caches\transforms-2\files-2.1\1c0769389455a4c14b7a50bc2530cb4a\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+88-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\1c0769389455a4c14b7a50bc2530cb4a\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
 89            android:exported="false"
-89-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Tri Vo\.gradle\caches\transforms-2\files-2.1\1c0769389455a4c14b7a50bc2530cb4a\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+89-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\1c0769389455a4c14b7a50bc2530cb4a\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
 90            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-90-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Tri Vo\.gradle\caches\transforms-2\files-2.1\1c0769389455a4c14b7a50bc2530cb4a\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+90-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\1c0769389455a4c14b7a50bc2530cb4a\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
 91
 92        <meta-data
-92-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Tri Vo\.gradle\caches\transforms-2\files-2.1\4a1e8147c3db656939cfc830651ce63e\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+92-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\4a1e8147c3db656939cfc830651ce63e\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
 93            android:name="com.google.android.gms.version"
-93-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Tri Vo\.gradle\caches\transforms-2\files-2.1\4a1e8147c3db656939cfc830651ce63e\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+93-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\4a1e8147c3db656939cfc830651ce63e\jetified-play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
 94            android:value="@integer/google_play_services_version" />
-94-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\Tri Vo\.gradle\caches\transforms-2\files-2.1\4a1e8147c3db656939cfc830651ce63e\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+94-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\PC\.gradle\caches\transforms-2\files-2.1\4a1e8147c3db656939cfc830651ce63e\jetified-play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
 95    </application>
 96
 97</manifest>
