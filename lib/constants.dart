@@ -16,6 +16,13 @@ ButtonStyle kButtonStyle = TextButton.styleFrom(
   backgroundColor: Colors.white,
   textStyle: const TextStyle(fontSize: 20),
 );
+ButtonStyle kButtonStyle2 = TextButton.styleFrom(
+
+  padding: const EdgeInsets.all(16.0),
+  primary: Color(0xff0062FE),
+  // backgroundColor: Colors.white,
+  textStyle: const TextStyle(fontSize: 20, ),
+);
 //----Borders----
 double kImageBorder = 20;
 //----Image Container Size---
