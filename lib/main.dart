@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Motiapp',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -47,22 +47,22 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int currentIndexNumber = 0;
+  String image = '';
+  String quote = '';
+  int likeCount = 0;
+  bool isLoved = true;
   FirebaseFirestore firestore = FirebaseFirestore.instance;
   final size = 30.0;
 
   @override
   Widget build(BuildContext context) {
-    String image = '';
-    String quote = '';
-    int likeCount = 0;
-    bool isLoved = true;
     return Scaffold(
       backgroundColor: kBgColor,
       body: SafeArea(
         child: StreamBuilder(
           stream: firestore.collection('maindata').snapshots(),
           builder: (context, AsyncSnapshot<QuerySnapshot> snapshot) {
-            likeCount = snapshot.data!.docs[currentIndexNumber]["like"];
+            likeCount = snapshot.data?.docs[currentIndexNumber]["like"];
             isLoved =
                 snapshot.data!.docs[currentIndexNumber]["isLiked"] ?? true;
             if (!snapshot.hasData) return const Text('Loading...');
@@ -174,39 +174,50 @@ class _HomePageState extends State<HomePage> {
                             width: 120,
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(4),
-                              child: Stack(alignment: AlignmentDirectional.center
-                                  ,children: [
-                                Positioned.fill(
-                                  child: Container(
-                                    decoration: const BoxDecoration(
-                                      gradient: LinearGradient(
-                                        colors: <Color>[
-                                          Color(0xFFeeaeca),
-                                          Color(0xFF94bbe9),
-                                        ],
+                              child: Stack(
+                                  alignment: AlignmentDirectional.center,
+                                  children: [
+                                    Positioned.fill(
+                                      child: Container(
+                                        decoration: const BoxDecoration(
+                                          gradient: LinearGradient(
+                                            colors: <Color>[
+                                              Color(0xFFeeaeca),
+                                              Color(0xFF94bbe9),
+                                            ],
+                                          ),
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                ),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    TextButton(
-                                      onPressed: () {
-                                        Share.share(snapshot.data!
-                                            .docs[currentIndexNumber]["quote"]);
-                                      },
-                                      style: TextButton.styleFrom(
-                                          foregroundColor: Colors.white,
-                                          padding: const EdgeInsets.all(16.0),
-                                          textStyle: const TextStyle(fontSize: 20)),
-                                      child: Text("Share",),
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: [
+                                        TextButton(
+                                          onPressed: () {
+                                            Share.share(snapshot.data!
+                                                    .docs[currentIndexNumber]
+                                                ["quote"]);
+                                          },
+                                          style: TextButton.styleFrom(
+                                              foregroundColor: Colors.white,
+                                              padding:
+                                                  const EdgeInsets.all(16.0),
+                                              textStyle: const TextStyle(
+                                                  fontSize: 20)),
+                                          child: Text(
+                                            "Share",
+                                          ),
+                                        ),
+                                        Icon(
+                                          Icons.ios_share,
+                                          color: Colors.white,
+                                        ),
+                                      ],
                                     ),
-                                    Icon(Icons.ios_share, color: Colors.white,),
-                                  ],
-                                ),
-                              ]),
+                                  ]),
                             ),
                           )
                         ],
@@ -222,7 +233,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-// const Text(
-// 'Like 👍',
-// style: TextStyle(fontWeight: FontWeight.bold),
-// )
